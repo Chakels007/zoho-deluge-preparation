@@ -1,0 +1,117 @@
+
+// Basic 
+
+strVar="Your contact has been saved";
+
+info strVar;
+
+
+// List
+
+strList = List:String({"hockey", "cricket", "football", "tennis"});
+
+info strList;
+
+input = {"Name":"Gowtham", "Country":"India"}
+
+list1 = List.String({input.Name + ", " + input.Country});
+
+info list1;
+
+// Map - Key Value pair
+
+map1 = map();
+map1.put("David", "USA");
+map1.put("Sam", "UK");
+map1.put("Alex", "UAE");
+
+if(map1.containKey("David"))
+{
+    alert ("David Lives in " + map1.get("David"));
+}
+else
+{
+    alert ("The Name does now contain");
+}
+
+// Clear the map
+
+map1.clear();
+
+info map1;
+
+// Proof that the map size is reduced
+
+map1 = map();
+map1.put("David", "USA");
+map1.put("Sam", "UK");
+map1.put("Alex", "UAE");
+
+info(map1.size()+ " size"); // 3 size
+map1.clear();
+info(map1.size()+ " size"); // 0 size
+
+// conditional statement
+
+time = "today";
+strT = IF(time == "today", "My Birthday", "Not My Birthday");
+info strT;
+
+// send email 
+
+sendmail
+(
+From : "test@zoho.com" 
+To : "test@zoho.com" 
+Subject : "Report for Product Status: " 
+Message : "Product: "
+)
+
+info "Report has been sent.";
+
+// Zoho Crm Create Records
+
+newRecordInfo = Map();
+newRecordInfo.put("Last_Name", "Sriram");
+newRecordInfo.put("mobile_number", "9940176788");
+newRecordInfo.put("country", "India");
+
+response = zoho.crm.createRecord("Leads",newRecordInfo, {trigger:{"workflow"}});
+info response;
+
+{
+  "Modified_Time": "2018-10-25T10:38:28+05:30",
+  "Modified_By": {
+    "name": "ZohoDemo",
+    "id": "3388926000000166021"
+  },
+  "Created_Time": "2018-10-25T10:38:28+05:30",
+  "id": "3388926000000313001",
+  "Created_By": {
+    "name": "ZohoTest",
+    "id": "3388926000000166021"
+  }
+}
+
+
+// Zoho crm upload records
+
+uploadRecord = Map();
+uploadRecord.put("Last_Name", "John");
+response = zoho.crm.uploadRecord("Leads", 3865000457214, uploadRecord);
+info response;
+
+{
+  "Modified_Time": "2018-10-25T10:50:15+05:30",
+  "Modified_By": {
+    "name": "ZohoDemo",
+    "id": "3388926000000166021"
+  },
+  "Created_Time": "2018-10-25T10:38:28+05:30",
+  "id": "3388926000000313001",
+  "Created_By": {
+    "name": "ZohoTest",
+    "id": "3388926000000166021"
+  }
+}
+
