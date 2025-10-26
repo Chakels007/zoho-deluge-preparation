@@ -1,0 +1,131 @@
+// Type Here
+// strVar="Your contact has been saved";
+
+// info strVar;
+
+//strList = List:String({"hockey", "cricket", "football", "tennis"});
+
+// info strList;
+
+//input = {"Name":"Gowtham", "Country":"India"}
+
+//list1 = List.String({input.Name + ", " + input.Country});
+
+// info list1;
+
+// map1 = map();
+// map1.put("David", "CSE");
+// map1.put("Alex", "EEE");
+// map1.put("Aaron", "ECE");
+// map1.put("Alan", "MECH");
+// if(map1.containKey("Aaron"))
+// {
+// 	info ("David is from the department of " + map1.get("David"));
+// }else
+// {
+// 	info ("User does not contain in the map");
+// }
+// map1.remove("David");
+//alert map1.get("name");
+
+// map1 = map();
+// map1.put("John", "India");
+// map1.put("David", "USA");
+// if(map1.containKey("John"))
+// {
+//       info ("John is lived in " + map1.get("John"));    
+// }
+// else
+// {
+//       info ("No Information available");
+// }
+// map1.remove("John");
+
+
+// map1 = map();
+// map1.put("David", "USA");
+// map1.put("Sam", "UK");
+// map1.put("Alex", "UAE");
+
+// if(map1.containKey("David"))
+// {
+//     info ("David Lives in " + map1.get("David"));
+// }
+// else
+// {
+//     info ("The Name does now contain");
+// }
+
+// map1 = map();
+// map1.put("David", "USA");
+// map1.put("Sam", "UK");
+// map1.put("Alex", "UAE");
+
+// info(map1.size()+ " size");
+// map1.clear();
+// info(map1.size()+ " size");
+
+// info zoho.currentdate;
+// info zoho.currenttime;
+// info zoho.adminuserid;
+// info zoho.adminuser;
+
+
+// sendmail
+// (
+// To : "test@gmail.com"
+// From : zoho.adminuserid ||  "gowtham@gmail.com"
+// Subject : "Reg application for job posted at recruitment.zoho.com" 
+// Message : "The job profile for which you have applied is not currently open " 
+// )
+
+// time = "Yesterday";
+// strT = IF(time == "today", "My Birthday", "Not My Birthday");
+// info strT;
+
+// sendmail
+// (
+// From : "test@zoho.com" 
+// To : "test@zoho.com" 
+// Subject : "Report for Product Status: " 
+// Message : "Product: "
+// )
+
+// info "Report has been sent.";
+
+// mapResp = zoho.crm.createRecord('module', <dataMap> Map, <OptionalDataMap> Map);
+
+// newRecordInfo = Map();
+// newRecordInfo.put("Last_Name", "Sriram");
+// newRecordInfo.put("mobile_number", "9940176788");
+// newRecordInfo.put("country", "India");
+
+// response = zoho.crm.createRecord("Leads",newRecordInfo, {trigger:{"workflow"}});
+// info response;
+
+// uploadRecord = Map();
+// uploadRecord.put("Last_Name", "John");
+// response = zoho.crm.uploadRecord("Leads", 3865000457214, uploadRecord);
+// info response;
+
+// variableMap = Map();
+// variableMap.put("apiname","Gowtham");
+// variableMap.put("value","26");
+
+// response = zoho.crm.invokeConnector("crm.set", variableMap); 
+
+// strVar = getUrl('http://www.zoho.com');
+// info strVar;
+
+
+
+
+
+
+
+
+
+
+
+
+
